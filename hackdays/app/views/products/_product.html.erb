@@ -1,0 +1,23 @@
+<article class="product">
+  <header>
+    <%= link_to products_path do %>
+      <%= image_tag product.image.thumb, alt: product.name %>
+      <h4><%= product.name %></h4>
+    <% end %>
+  </header>
+  <p class="description">
+    <%= product.description %>
+
+
+    </p>
+  <footer class="actions">
+  </footer>
+
+  <aside class="price">
+    <%= product.price %>
+  </aside>
+
+
+
+
+</article>

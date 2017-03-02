@@ -1,14 +1,30 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hackdays</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>hackdays</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= render 'layouts/top_nav' %>
 
-  <body>
+  <main class="container">
+    <div class="container flash-container">
+    <% flash.each do |type, msg| %>
+          <%= content_tag :div, class: "alert alert-#{type}" do %>
+            <%= msg %>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            <% end %>
+          <% end %>
+        </div>
     <%= yield %>
-  </body>
+  </main>
+
+  <%= yield :end_of_body %>
+</body>
 </html>

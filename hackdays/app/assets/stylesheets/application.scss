@@ -14,3 +14,15 @@
  *= require_self
  */
  @import "semantic-ui";
+ // Vendor
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "font-awesome";
+
+ // App
+ @import "products";
+
+ // Global
+ body {
+   padding-top: 70px;
+ }

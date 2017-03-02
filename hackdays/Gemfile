@@ -34,7 +34,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'hirb', '0.7.3'
 gem 'semantic-ui-sass', '2.2.1.1'
-gem 'rmagick'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails'
 

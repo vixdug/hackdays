@@ -8,7 +8,7 @@ The Learn Code initiative is building a Ruby on Rails application for Hackdays. 
  * Puma
  * Postgres
  * Semantic-ui
- 
+
 ### STEP 1:
 
 * Clone Repo by using the following command:
@@ -29,3 +29,6 @@ git clone git@github.com:vixdug/t2-hackdays.git hackdays
 ### Best Practices:
 
 * when working on a part of the app, be sure to use branches such as `features\user-accounts` or `styles\cart-page` etc. Do not code on master.
+* Issues on this repo will be used to track features that are needing to be built such as: https://github.com/vixdug/t2-hackdays/issues/1
+* remember when creating controller use the `bin/rails generate controller` command
+* when creating model use: `bin/rails generate model [fields]`

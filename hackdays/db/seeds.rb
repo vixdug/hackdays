@@ -56,7 +56,7 @@ Product.create(
 )
 
 
-
+Product.create(
 
   name: 'Magick Spoon',
   description: "It's another, more magical spoon!",

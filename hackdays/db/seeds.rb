@@ -48,10 +48,21 @@ Product.create(
 )
 
 Product.create(
+
+  name:  'Rusty spoon',
+  description: "The rustier the better!",
+  image: open("db/seed_assets/spoon1.png"),
+  price: 12.00
+)
+
+
+
+
   name: 'Magick Spoon',
   description: "It's another, more magical spoon!",
   # image: open("db/seed_assets/spoon2.jpeg"),
   price: 8.99
 )
+
 
 puts "DONE!"

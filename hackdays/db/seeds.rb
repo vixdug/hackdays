@@ -47,4 +47,11 @@ Product.create(
   price: 9.00
 )
 
+Product.create(
+  name: 'Magick Spoon',
+  description: "It's another, more magical spoon!",
+  # image: open("db/seed_assets/spoon2.jpeg"),
+  price: 8.99
+)
+
 puts "DONE!"

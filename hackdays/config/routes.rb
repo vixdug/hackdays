@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 root to: 'products#index'
 
 get '/products/:id' => "products#show"
-resources :products, :carts
+get '/cart' => 'carts#show'
+	resources :products, :carts
 
 end

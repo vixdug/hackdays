@@ -15,6 +15,9 @@
 <body>
 <%= @products.name %>
 <%= @products.description %>
+
+<%= link_to cart_path do %>
 <button type="button" class='btn btn-warning'>Spoon2Cart</button>
+ <% end %>
 </body>
 </html>

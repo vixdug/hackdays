@@ -4,4 +4,7 @@ class CartsController < ApplicationController
 
   end
 
+  def index
+  end
+
 end

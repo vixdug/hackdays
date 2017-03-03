@@ -12,4 +12,6 @@ Rails.application.routes.draw do
 
 root to: 'products#index'
 
+get '/cart' => 'carts#show'
+
 end

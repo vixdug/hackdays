@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
 root to: 'products#index'
 
+get '/products/:id' => "products#show"
 get '/cart' => 'carts#show'
+	resources :products, :carts
 
 end

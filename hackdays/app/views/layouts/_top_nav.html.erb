@@ -24,8 +24,18 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+
+
+
 <a href="/cart">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-       
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- the next several lines (32-37) are for our customer login stuff -->
+  <% if current_user %>
+    Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+  <% else %>
+    <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+  <% end %>
+
       </ul>
     </div>
   </div>

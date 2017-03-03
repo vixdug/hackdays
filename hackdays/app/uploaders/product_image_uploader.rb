@@ -36,6 +36,13 @@ class ProductImageUploader < CarrierWave::Uploader::Base
   #   process resize_to_fit: [100, 100]
   # end
 
+
+  # Create different versions of your uploaded files:
+  # version :tiny do
+  #   process resize_to_fit: [100, 100]
+  # end
+  #
+
   # version :thumb do
   #   process resize_to_fit: [300, 300]
   # end

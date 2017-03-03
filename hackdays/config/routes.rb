@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
-get '/products' => 'products#index'
+root to: 'products#index'
 
 end

@@ -54,4 +54,6 @@ Product.create(
   price: 12.00
 )
 
+
+
 puts "DONE!"
